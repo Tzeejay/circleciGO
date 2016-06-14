@@ -1,1 +1,1 @@
-web: go circleci
+web: circleci
