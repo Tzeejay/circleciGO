@@ -4,16 +4,16 @@ import (
   "io"
   "net/http"
   "log"
-  //"os"
+  "os"
 )
 
 func main() {
-  //port := os.Getenv("PORT")
+  port := os.Getenv("PORT")
 
   http.HandleFunc("/", base)
   http.HandleFunc("/iwasclicked", iwasclicked)
 
-  serverStart := http.ListenAndServe(":5000", nil)
+  serverStart := http.ListenAndServe(":"+port, nil)
   log.Fatal(serverStart)
 }
 
