@@ -1,1 +1,1 @@
-web: circleci
+web: circleciGO
